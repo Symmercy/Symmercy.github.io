@@ -2,43 +2,42 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #333;
-    color: #fff;
     transition: background-color 0.5s, color 0.5s;
 }
 
 header {
+    background-color: #333;
+    color: #fff;
     text-align: center;
     padding: 20px;
     backdrop-filter: blur(10px);
 }
 
 .tabs {
-    background-color: #555;
+    background-color: #eee;
     padding: 10px;
     text-align: center;
 }
 
 .tabs a {
     text-decoration: none;
-    color: #fff;
+    color: #333;
     padding: 10px 20px;
     margin: 0 10px;
     border-radius: 5px;
-    background-color: #777;
+    background-color: #fff;
 }
 
 .tabs a:hover {
-    background-color: #999;
+    background-color: #ddd;
 }
 
 section {
     margin: 20px;
-    background-color: #444;
 }
 
 h2 {
-    color: #fff;
+    color: #333;
 }
 
 ul {
@@ -61,5 +60,15 @@ footer {
 }
 
 .theme-switch {
-    display: none; /* Hide the theme switch in dark mode */
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s;
 }
+
+

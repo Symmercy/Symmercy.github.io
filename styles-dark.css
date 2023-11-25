@@ -1,0 +1,17 @@
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.tabs a {
+    color: #fff;
+    background-color: #555;
+}
+
+.tabs a:hover {
+    background-color: #777;
+}
+
+.theme-switch {
+    background-color: #fff;
+}

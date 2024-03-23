@@ -12,12 +12,16 @@ header.dark-theme {
     color: #fff;
     text-align: center;
     padding: 20px;
+    margin-bottom: 20px; /* Added margin to separate from the navigation tabs */
     backdrop-filter: blur(10px);
 }
 
 .tabs.dark-theme {
     background-color: #333;
     color: #fff;
+    margin-top: 0; /* Reset margin-top */
+    padding: 10px;
+    text-align: center;
 }
 
 .tabs.dark-theme a {
@@ -34,7 +38,7 @@ header.dark-theme {
 }
 
 section.dark-theme {
-    margin: 20px;
+    margin: 0 20px; /* Adjusted margin */
 }
 
 h2.dark-theme {
@@ -44,6 +48,7 @@ h2.dark-theme {
 ul.dark-theme {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 ul.dark-theme li {

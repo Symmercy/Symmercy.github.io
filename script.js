@@ -21,10 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function toggleTheme() {
-    // Toggle the 'dark-mode' class on the body
-    document.body.classList.toggle("dark-mode");
+  var body = document.body
+  if (body.classList.contains("dark-theme")) {
+      body.classList.remove("dark-theme");
+      body.classList.add("light-theme");
 
-    // Save the theme preference to localStorage
-    var currentTheme = document.body.classList.contains("dark-mode") ? "dark-mode" : "";
-    localStorage.setItem("theme", currentTheme);
+  } else {
+    body.classList.remove("light-theme");
+    body.classList.add("dark-theme")
+
+  }
 }

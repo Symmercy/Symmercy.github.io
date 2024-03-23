@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function toggleTheme() {
   var body = document.body
-  if (body.classList.contains("dark-theme")) {
-      body.classList.remove("dark-theme");
-      body.classList.add("light-theme");
+  if (body.classList.contains("styles_dark")) {
+      body.classList.remove("styles_dark");
+      body.classList.add("styles");
 
   } else {
-    body.classList.remove("light-theme");
-    body.classList.add("dark-theme")
+    body.classList.remove("styles");
+    body.classList.add("styles_dark")
 
   }
 }

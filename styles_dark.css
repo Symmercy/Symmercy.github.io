@@ -2,11 +2,17 @@
 body.dark-theme {
     background-color: #222;
     color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Adjusted to cover the entire viewport height */
 }
 
 header.dark-theme {
-    background-color: #444;
+    background-color: #111;
     color: #fff;
+    text-align: center;
+    padding: 20px;
+    backdrop-filter: blur(10px);
 }
 
 .tabs.dark-theme {
@@ -16,16 +22,19 @@ header.dark-theme {
 
 .tabs.dark-theme a {
     color: #fff;
-    background-color: #555;
+    background-color: #444;
 }
 
 .tabs.dark-theme a:hover {
-    background-color: #777;
+    background-color: #555;
+}
+
+.tabs.dark-theme a.active {
+    background-color: #666; /* Adjust the active tab color */
 }
 
 section.dark-theme {
-    background-color: #333;
-    color: #fff;
+    margin: 20px;
 }
 
 h2.dark-theme {
@@ -33,21 +42,31 @@ h2.dark-theme {
 }
 
 ul.dark-theme {
-    color: #fff;
+    list-style-type: none;
+    padding: 0;
 }
 
-li.dark-theme {
+ul.dark-theme li {
+    margin-bottom: 5px;
+}
+
+ul.dark-theme li a {
     color: #fff;
 }
 
 footer.dark-theme {
     background-color: #111;
     color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .theme-switch.dark-theme {
-    background-color: #fff;
-    color: #333;
+    background-color: #333;
+    color: #fff;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
